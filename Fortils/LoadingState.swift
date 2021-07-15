@@ -6,7 +6,7 @@
 
 import Foundation
 
-public enum ResultState<T, S> {
+enum ResultState<T, S> {
     case loading
     case success(T)
     case failure(S)

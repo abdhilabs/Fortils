@@ -6,9 +6,9 @@
 
 import UIKit
 
-public extension UIView {
+extension UIView {
     
-    public func addSubviews(_ views: UIView...) {
+    func addSubviews(_ views: UIView...) {
       for view in views {
         addSubview(view)
       }

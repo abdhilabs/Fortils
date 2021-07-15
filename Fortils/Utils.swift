@@ -6,8 +6,8 @@
 
 import Foundation
 
-public class Utils {
-    public static let dateFormatter: DateFormatter = {
+class Utils {
+    static let dateFormatter: DateFormatter = {
         let dateFormatter = DateFormatter()
         dateFormatter.dateFormat = "yyyy-mm-dd"
         return dateFormatter
