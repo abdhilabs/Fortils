@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
   
   spec.name         = "Fortils"
-  spec.version      = "0.0.2"
+  spec.version      = "0.0.3"
   spec.summary      = "Framework for utils collection"
   spec.swift_version = "5.1"
 
