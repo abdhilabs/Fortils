@@ -15,7 +15,6 @@
 		2396FD5B26A055E300C6C266 /* UIView+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396FD5626A055E300C6C266 /* UIView+Ext.swift */; };
 		2396FD5C26A055E300C6C266 /* CustomError+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396FD5726A055E300C6C266 /* CustomError+Ext.swift */; };
 		2396FD5D26A055E300C6C266 /* String+Ext.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2396FD5826A055E300C6C266 /* String+Ext.swift */; };
-		7769AC1F6518C41CA4CB689C /* Pods_Fortils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A5DA92F118950E4793685A1 /* Pods_Fortils.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,7 +29,6 @@
 		2396FD5726A055E300C6C266 /* CustomError+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CustomError+Ext.swift"; sourceTree = "<group>"; };
 		2396FD5826A055E300C6C266 /* String+Ext.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Ext.swift"; sourceTree = "<group>"; };
 		77B2B91C46280B592809CAD6 /* Pods-Fortils.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fortils.debug.xcconfig"; path = "Target Support Files/Pods-Fortils/Pods-Fortils.debug.xcconfig"; sourceTree = "<group>"; };
-		8A5DA92F118950E4793685A1 /* Pods_Fortils.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Fortils.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F247BD1B7DC080FA6F84059F /* Pods-Fortils.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Fortils.release.xcconfig"; path = "Target Support Files/Pods-Fortils/Pods-Fortils.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -39,7 +37,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7769AC1F6518C41CA4CB689C /* Pods_Fortils.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -67,21 +64,13 @@
 		2396FD4126A054D700C6C266 /* Fortils */ = {
 			isa = PBXGroup;
 			children = (
+				2396FD4226A054D700C6C266 /* Fortils.h */,
+				2396FD4326A054D700C6C266 /* Info.plist */,
 				2396FD5026A055C700C6C266 /* LoadingState.swift */,
 				2396FD5126A055C700C6C266 /* Utils.swift */,
 				2396FD4B26A0558B00C6C266 /* Extension */,
-				2396FD4A26A0557500C6C266 /* Supporting Files */,
 			);
 			path = Fortils;
-			sourceTree = "<group>";
-		};
-		2396FD4A26A0557500C6C266 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				2396FD4226A054D700C6C266 /* Fortils.h */,
-				2396FD4326A054D700C6C266 /* Info.plist */,
-			);
-			path = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		2396FD4B26A0558B00C6C266 /* Extension */ = {
@@ -99,7 +88,6 @@
 		95E72FADEAE8362277B9E97F /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				8A5DA92F118950E4793685A1 /* Pods_Fortils.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -110,7 +98,6 @@
 				77B2B91C46280B592809CAD6 /* Pods-Fortils.debug.xcconfig */,
 				F247BD1B7DC080FA6F84059F /* Pods-Fortils.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -364,7 +351,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Fortils/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Fortils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -390,7 +377,7 @@
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				INFOPLIST_FILE = "Fortils/Supporting Files/Info.plist";
+				INFOPLIST_FILE = Fortils/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
