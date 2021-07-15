@@ -6,9 +6,9 @@
 
 import UIKit
 
-extension UIViewController {
+public extension UIViewController {
     
-    func messageEmpty(_ message: String) {
+    public func messageEmpty(_ message: String) {
         let alert = UIAlertController(title: "Info", message: message, preferredStyle: .alert)
         alert.addAction(UIAlertAction(title: "OK", style: .default, handler: { (action) in
             alert.dismiss(animated: true, completion: nil)

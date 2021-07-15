@@ -6,9 +6,9 @@
 
 import UIKit
 
-extension String {
+public extension String {
     
-    func hexToUIColor(alpha: Double = 1.0) -> UIColor {
+    public func hexToUIColor(alpha: Double = 1.0) -> UIColor {
         var cString = self.trimmingCharacters(in: .whitespacesAndNewlines).uppercased()
         if cString.hasPrefix("#"){
             cString.remove(at: cString.startIndex)
