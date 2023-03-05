@@ -1,0 +1,71 @@
+@Tutorial(time: 10) {
+  @Intro(title: "Preview Remote File") {
+    This tutorial guides you to make an app with feature previewing file from network. 
+    
+    @Image(source: file, alt: "accessible description")
+  }
+  
+  @Section(title: "Open an existing project and add Fortils") {
+    @ContentAndMedia {
+      Create or open and configure an Xcode project that uses Fortils.
+      
+      @Image(source: file, alt: "accessible description")
+    }
+    
+    @Steps {
+      @Step {
+        Create a new project or open an existing project.
+        
+        @Image(source: open-existing-project, alt: "accessible description")
+      }
+      
+      @Step {
+        Add `Fortils` as a dependency to the project.
+        
+        @Image(source: placeholder-image, alt: "accessible description")
+      }
+    }
+  }
+  
+  @Section(title: "Add or Open existing View") {
+    @ContentAndMedia {
+      Add or open existing view that will implement feature preview file.
+      
+      @Image(source: file, alt: "accessible description")
+    }
+    
+    @Steps {
+      @Step {
+        Create a new SwiftUI View file named `PreviewFileView.swift`.
+        
+        @Code(name: "PreviewFileView.swift", file: 01-preview-file-01.swift) {
+          @Image(source: preview-01-preview-file-01.png, alt: "A screenshot from the Xcode preview as it would appear on iPhone, with the text, Hello, World!, centered in the middle of the display.")
+        }        
+      }
+      
+      @Step {
+        Import the `Fortils` package and change TextView become Button with title 'Preview File'.
+        
+        @Code(name: "PreviewFileView.swift", file: 01-preview-file-02.swift) {
+          @Image(source: preview-01-preview-file-02.png, alt: "A screenshot from the Xcode preview as it would appear on iPhone, with the text, Hello, World!, centered in the middle of the display.")
+        }
+      }
+      
+      @Step {
+        Import the `QuickLook` package, add @State variable fileUrl and add .quickLook for preview file.
+        
+        @Code(name: "PreviewFileView.swift", file: 01-preview-file-03.swift) {
+          @Image(source: preview-01-preview-file-02.png, alt: "A screenshot from the Xcode preview as it would appear on iPhone, with the text, Hello, World!, centered in the middle of the display.")
+        }
+      }
+      
+      @Step {
+        Add variable remoteUrl dummy, and call FileManagement.previewFile. 
+        
+        @Code(name: "PreviewFileView.swift", file: 01-preview-file-04.swift) {
+          @Image(source: preview-01-preview-file-03.png, alt: "A screenshot from the Xcode preview as it would appear on iPhone, with the text, Hello, World!, centered in the middle of the display.")
+        }
+      }
+    }
+  }
+}

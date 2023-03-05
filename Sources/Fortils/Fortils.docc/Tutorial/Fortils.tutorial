@@ -1,0 +1,15 @@
+@Tutorials(name: "Fortils") {
+    @Intro(title: "Inside Fortils") {
+        Breakdown utilities inside Fortils
+        
+        @Image(source: xcode-banner.png, alt: "An xcode banner")
+    }
+    
+    @Chapter(name: "File Management") {
+      Managing URL files from local and remote network.
+        
+        @Image(source: file, alt: "accessible description")
+        
+        @TutorialReference(tutorial: "doc:Preview-Remote-File")
+    }
+}

@@ -11,3 +11,4 @@ Fortils provides you utilities that will help you when developing an app. This f
 ### Essentials
 
 - <doc:GettingStarted>
+- <doc:/tutorials/Fortils>
