@@ -8,7 +8,11 @@
 import SwiftUI
 
 public struct VerticalSpacer: View {
-  public let height: CGFloat
+  private let height: CGFloat
+  
+  public init(height: CGFloat) {
+    self.height = height
+  }
   
   public var body: some View {
     Spacer()
@@ -17,7 +21,11 @@ public struct VerticalSpacer: View {
 }
 
 public struct HorizontalSpacer: View {
-  public let width: CGFloat
+  private let width: CGFloat
+  
+  public init(width: CGFloat) {
+    self.width = width
+  }
   
   public var body: some View {
     Spacer()
